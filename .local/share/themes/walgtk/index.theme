@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flat-Remix-GTK-WAL
+Comment=Flat-Remix-GTK Generated from WAL for Accent Colors.
+Encoding=UTF-8
+
+
+[X-GNOME-Metatheme]
+GtkTheme=Flat-Remix-GTK-WAL
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maximize,close
