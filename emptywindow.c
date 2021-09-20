@@ -1,6 +1,8 @@
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 
+//Compile with "gcc -lX11 emptywindow.c -o emptywindow".
+
 int main(int argc, char* argv[])
 {
     Display* display = XOpenDisplay(NULL);
