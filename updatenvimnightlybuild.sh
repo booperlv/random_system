@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# If I find a reason to use 0.6 nightly soon, this might be handy :)
+# If I find a reason to use 0.7 nightly soon, this might be handy :)
 #You probably shouldn't use this it's pretty unsecure and specific to my
 #installations' circumstances. Also, this isn't optimized much if at all LOL
 
@@ -57,7 +57,7 @@ function confirminstall {
   fi
 }
 
-currentrelease=$(curl -s https://api.github.com/repos/neovim/neovim/releases | jq -r '.[] | .name' | grep 'NVIM v0.6.0')
+currentrelease=$(curl -s https://api.github.com/repos/neovim/neovim/releases | jq -r '.[] | .body' | grep 'dev')
 echo "Current Release is $currentrelease"
 currentversion=$(nvim -v | grep 'NVIM v' || : )
 echo "Current Version is $currentversion"
